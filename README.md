@@ -1,6 +1,8 @@
-# Frontend Mentor - Stats preview card component solution
+# Stats preview card component solution
 
-This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). 
+
+This example stats-component is designed for both mobile and desktop viewing, and was a great practice project to further deepen my knowledge of CSS, as well as learn new concepts!
 
 ## Table of contents
 
@@ -14,9 +16,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,22 +28,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Desktop Layout](./images/desktopSS.png)
+![Mobile Layout](./images/mobileSS.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-https://unsplash.com/photos/VBLHICVh-lI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+- Solution URL: [Github Repo](https://github.com/JohnMichaelD/stats-preview-card-component)
+- Live Site URL: [Live Site](https://johnmichaeld.github.io/stats-preview-card-component/)
+- Image Source: [Image Source](https://unsplash.com/photos/VBLHICVh-lI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
 ## My process
 
@@ -52,72 +44,40 @@ https://unsplash.com/photos/VBLHICVh-lI?utm_source=unsplash&utm_medium=referral&
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
+Going into this project, I thought it would be a great way to practice my skills with CSS, and I was right! Most of the project was quite simple and flowed well. But there were a few cases where I got stuck, but was able to figure out the solutions.
 
-- display: block
-https://www.tutorialrepublic.com/faq/how-to-remove-white-space-under-an-image-using-css.php
+First, I had trouble getting the image to sit aligned with it's parent container. This was solved using 
 
-- coloring an image with a tint
-https://stackoverflow.com/questions/43938860/how-to-tint-image-with-css/43938944
-
--media queries 
-https://stackoverflow.com/questions/42586044/change-css-only-for-mobile-devices
-
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
+.img {
+  display: block;.
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+and worked perfectly. 
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I also had quite a bit of issue regarding the tint over the image. I found quite a few different ways to accomplish the tint via StackOverflow, but was having issues getting it to actually work. I was trying to tint the actual image, while what was needed was to apply a tint to a separate div, which then hovered over the image. 
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+This project was good practice for basic HTML and CSS properties. But for my next project(s), I would really like to get more practice using:
+- Sass
+- Styled COmponents
+- CSS Grid
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+As well as starting the project with a Mobile-first workflow.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [display: block](https://www.tutorialrepublic.com/faq/how-to-remove-white-space-under-an-image-using-css.php)
+- This helped figure out not only how to fix the spacing issue with the image, but also why it happens.
+- [coloring an image with a tint](https://stackoverflow.com/questions/43938860/how-to-tint-image-with-css/43938944)
+- This helped me with tinting the image container.
+- [media queries](https://stackoverflow.com/questions/42586044/change-css-only-for-mobile-devices)
+- This was useful in reminding me how to simply begin mobile-layout designs.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [JMD](https://www.johnmdarrin.com)
+- Frontend Mentor - [@JohnMichaelD](https://www.frontendmentor.io/profile/JohnMichaelD)
