@@ -69,6 +69,9 @@ https://www.tutorialrepublic.com/faq/how-to-remove-white-space-under-an-image-us
 - coloring an image with a tint
 https://stackoverflow.com/questions/43938860/how-to-tint-image-with-css/43938944
 
+-media queries 
+https://stackoverflow.com/questions/42586044/change-css-only-for-mobile-devices
+
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 

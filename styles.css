@@ -22,6 +22,30 @@ body {
     border-radius: 10px;
 }
 
+.imgContainer {
+    position: relative;
+    max-width: 500px;
+}
+
+.imgTint {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(125, 17, 170, 0.5);
+    z-index: 1;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.img {
+    max-width: 500px;
+    display: block;
+    border-radius: 0px 10px 10px 0px;
+}
+
 .textContainer {
     max-width: 400px;
     margin: 40px;
@@ -41,31 +65,6 @@ body {
     font-size: 15px;
     font-weight: lighter;
     padding-top: 5px;
-}
-
-.imgContainer {
-    position: relative;
-    max-width: 500px;
-}
-
-.imgTint {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(125, 17, 170, 0.5);
-    transition: all .3s linear;
-    z-index: 1;
-    border-radius: 0px 10px 10px 0px;
-}
-
-.img {
-    max-width: 500px;
-    display: block;
-    border-radius: 0px 10px 10px 0px;
 }
 
 .statsContainer {
@@ -97,4 +96,66 @@ body {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 475px) {
+
+    .cardContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        width: 350px;
+        height: 95vh;
+    }
+
+    .imgTint {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .img {
+        width: 350px;
+        height: 250px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .title {
+        text-align: center;
+        padding: 20px 10px 10px 10px;
+        margin: 10px;
+    }
+    
+    .description {
+        text-align: center;
+        padding: 0px 25px 0px 25px;
+    }
+    
+    .statsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        text-align: start;
+        padding: 10px 0px 0px 0px;
+        margin: 10px 0px 0px 10px;
+    }
+
+    .statsHeader {
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
